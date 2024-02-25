@@ -1,12 +1,12 @@
+import Banner from '@/Components/Home route/banner/Banner';
 import React from 'react';
 
-const page = () => {
-  return (
-    <div>
-      <h1 className='text-5xl'>hi saiful</h1>
-      <button className='btn btn-primary'>click me</button>
-    </div>
-  );
+const Home = () => {
+    return (
+        <div>
+            <Banner></Banner>
+        </div>
+    );
 };
 
-export default page;
+export default Home;

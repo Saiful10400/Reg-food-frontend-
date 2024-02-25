@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "@/Image resources/logo.png";
+import logo from "@/img_resource/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import { CgShoppingCart } from "react-icons/cg";

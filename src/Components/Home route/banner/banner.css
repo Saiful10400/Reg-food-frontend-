@@ -1,0 +1,42 @@
+#banner_container{
+    background: url(../../../img_resource/background_resources/banner.jpg) no-repeat center center,#27253cc4;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+
+.offer_container{
+    border: 15px solid rgba(128, 128, 128, 0.355);
+    border-left: 15px solid hsl(28, 100%, 52%);
+    border-right: 15px solid white;
+    animation-name: offer;
+    animation-duration: 90s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+.offer_container .offer_content{
+    animation-name: offer_content;
+    animation-duration: 90s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+
+@keyframes offer_content {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes offer{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
