@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import TopContact from "@/Components/Home route/TopContact";
 import Navbar from "@/Components/Home route/Navbar";
+import Footer from "@/Components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,9 +21,7 @@ export default function RootLayout({ children }) {
        <div>
        {children}
        </div>
-       <div className="h-[100vh]">
-hellow saiful
-       </div>
+       <Footer></Footer>
         </body>
         
     </html>

@@ -1,0 +1,5 @@
+#footerContainer{
+    background: url(../../../src/img_resource/footer/footer.jpg) no-repeat,#151516b7;
+    background-blend-mode: overlay;
+    background-size: cover;
+}
