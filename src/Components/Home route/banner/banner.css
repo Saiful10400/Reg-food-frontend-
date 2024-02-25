@@ -40,3 +40,101 @@
         transform: rotate(360deg);
     }
 }
+
+
+/* single components animation. */
+
+#tomato,#tomatoSlice{
+    transform: scale(0.7);
+}
+
+#tomato,#tomatoSlice,#twosliceTomato,#mint,#pudina,#capsicum{
+   
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+
+#pudina{
+    animation-name: pudina;
+    animation-duration: 20s;
+}
+#tomato{
+    animation-name: roundTomato;
+}
+#tomatoSlice{
+    animation-name: tomatoSlice;
+    animation-duration: 5s;
+    animation-direction: alternate-reverse;
+}
+#twosliceTomato,#mint{
+    animation-name: twoSliceTomato;
+    animation-duration: 10s;
+    animation-direction:alternate-reverse ;
+}
+#mint{
+    animation-name: mint;
+}
+#capsicum{
+    animation-name: capsicum;
+    animation-duration: 100s;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes capsicum {
+    0%{
+        left: 60px;
+        transform: rotate(0deg);
+    }
+    100%{
+        left: 1400px;
+        transform: rotate(360deg);
+       
+    }
+}
+@keyframes roundTomato {
+    0%{
+        transform: rotate(0deg) scale(0.7);
+    }
+    100%{
+        transform: rotate(360deg) scale(0.7);
+       
+    }
+}
+@keyframes pudina {
+    0%{
+        transform: rotate(0deg) scale(0.7);
+    }
+    100%{
+        transform: rotate(360deg) scale(0.7);
+       
+    }
+}
+@keyframes tomatoSlice {
+    0%{
+        transform: translate(20px,0) scale(0.7);
+    }
+    100%{
+        transform: translate(-20px,0) scale(0.7);
+       
+    }
+}
+@keyframes mint {
+    0%{
+        transform: translate(20px,0) scale(0.7);
+    }
+    100%{
+        transform: translate(-20px,0) scale(0.7);
+       
+    }
+}
+@keyframes twoSliceTomato {
+    0%{
+        transform:   scale(0.7);
+    }
+    100%{
+        transform:   scale(0.5);
+       
+    }
+}
