@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import TopContact from "@/Components/Home route/TopContact";
+import Navbar from "@/Components/Home route/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
       
       <body className={inter.className}>
       <TopContact></TopContact>
+      <Navbar></Navbar>
        <div>
        {children}
        </div>
